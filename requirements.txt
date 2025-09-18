@@ -3,4 +3,3 @@ dash-bootstrap-components
 pandas
 numpy
 matplotlib
-gunicorn

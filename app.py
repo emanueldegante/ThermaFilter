@@ -287,7 +287,8 @@ def send_email(n_clicks, recipient):
     except Exception as e:
         return f"❌ Failed to send email: {e}"
 
-# -------------------- Run App --------------------
-if __name__ == '__main__':
-    port = int(os.environ.get("PORT", 8050))  # Render sets the PORT environment variable
-    app.run_server(host='0.0.0.0', port=port)
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8050))  # Render provides PORT automatically
+    app.run(host="0.0.0.0", port=port, debug=False)
+
